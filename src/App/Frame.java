@@ -67,11 +67,11 @@ public class Frame extends JFrame {
         return this.result;
     }
 	
-	JButton getB1(){
+	JButton getBtn1(){
         return this.btn1;
     }
 	
-	JButton getB2(){
+	JButton getBtn2(){
         return this.btn2;
     }
 	
