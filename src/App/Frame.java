@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Frame extends JFrame {
+	//tworzenie paneli aby mo¿na by³o podzieliæ okno na 4 czêœci
 	private static JPanel topPanel = new JPanel();
 	private static JPanel botPanel = new JPanel();
 	private static JPanel leftBotPanel = new JPanel();

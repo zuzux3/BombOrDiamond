@@ -23,6 +23,8 @@ public class BombOrDiamond {
 	
 	static class actionHandler implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
+			frame.setTryCounter("Proba: " + String.valueOf(tries));
+			frame.setDiamondCounter("Liczba diamentow: " + String.valueOf(diamonds));
 			tries++;
 			
 			if(tries < 20) {
@@ -37,6 +39,12 @@ public class BombOrDiamond {
 			
 			if(tries == 20) {
 				frame.setResult("Gra zakonczona, uzyskano " + String.valueOf(diamonds) +" diamentow.");
+				
+			}
+			
+			if(tries == 21) {
+				tries = 0;
+				diamonds = 0;
 			}
 			
 			System.out.println(currentObject);
