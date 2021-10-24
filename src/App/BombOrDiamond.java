@@ -38,7 +38,7 @@ public class BombOrDiamond {
 			}
 			
 			if(tries == 20) {
-				frame.setResult("Gra zakonczona, uzyskano " + String.valueOf(diamonds) +" diamentow.");
+				frame.setResult("Gra zakonczona, uzyskano " + String.valueOf(diamonds) +" diamentow.\n");
 				
 			}
 			
