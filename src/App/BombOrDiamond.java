@@ -33,10 +33,11 @@ public class BombOrDiamond {
 	static class actionHandler implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			//Wyœwietlanie iloœci prób i znalezionych diamentów
+			tries++;
 			frame.setTryCounter("Proba: " + String.valueOf(tries));
 			frame.setDiamondCounter("Liczba diamentow: " + String.valueOf(diamonds));
 			//dodawanie prób
-			tries++;
+			
 			
 			//definiowanie tego co bêdzie siê dzia³o w programie jeœli prób bêdzie mniej ni¿ 20
 			if(tries < 20) {
@@ -51,13 +52,10 @@ public class BombOrDiamond {
 			//definiowanie akcji programu jeœli zmienna tries bêdzie wynosi³a 20
 			if(tries == 20) {
 				//wyniki gry
-				frame.setResult("Gra zakonczona, uzyskano " + String.valueOf(diamonds) +" diamentow.\n");
-				
-			}
-			//definiowanie akcji programu jeœli zmienna tries bêdzie wynosi³a 21
-			if(tries == 21) {
+				frame.setResult("Gra zakonczona, uzyskano " + String.valueOf(diamonds) +" diamentow.\n Gra zaczê³a siê od nowa!\n");
 				tries = 0;
 				diamonds = 0;
+				
 			}
 			//wyœwietlanie w konsoli to jaki obiekt by³ w danym momencie
 			System.out.println(currentObject);
