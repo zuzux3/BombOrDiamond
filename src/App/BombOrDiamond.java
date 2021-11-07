@@ -32,11 +32,11 @@ public class BombOrDiamond {
 	//tworzenie klasy actionHandler zachowuj¹cej siê podobnie do ActionListenera
 	static class actionHandler implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
-			//Wyœwietlanie iloœci prób i znalezionych diamentów
+			//dodawanie prób
 			tries++;
+			//Wyœwietlanie iloœci prób i znalezionych diamentów
 			frame.setTryCounter("Proba: " + String.valueOf(tries));
 			frame.setDiamondCounter("Liczba diamentow: " + String.valueOf(diamonds));
-			//dodawanie prób
 			
 			
 			//definiowanie tego co bêdzie siê dzia³o w programie jeœli prób bêdzie mniej ni¿ 20
